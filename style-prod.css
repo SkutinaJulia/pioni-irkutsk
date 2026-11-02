@@ -214,3 +214,7 @@ main { max-width: var(--wrap); margin: 0 auto; padding: 0 var(--gut); }
 
 /* правка Юли: без переносов слов в текстах */
 h1, h2, h3, p, li, a, span, b, figcaption, blockquote { -webkit-hyphens: manual !important; hyphens: manual !important; }
+
+/* правка Юли: подсказка, что текст копируется (MAX, Telegram, ВК не принимают готовый текст по ссылке) */
+.s-send__hint { margin: 10px 2px 0; font-size: .82rem; line-height: 1.4; color: var(--c-ink-soft); }
+.s-send__note:not([hidden]) { display: block; margin-top: 8px; padding: 10px 12px; border-radius: 10px; background: var(--tint, var(--c-surface)); font-weight: 600; }
